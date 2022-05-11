@@ -33,7 +33,7 @@ scheduler_parallel_1 : DAG scheduler
 
 scheduler_parallel_2: tree scheduler
 
-**Remane the desired scheduler as scheduler_parallel
+**Rename the desired scheduler as scheduler_parallel
 
 **Important:** Using Simplewalle transaction family:
 
