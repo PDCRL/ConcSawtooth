@@ -80,7 +80,7 @@ class SimpleWalletClient(object):
         self._address = _hash(FAMILY_NAME.encode('utf-8'))[0:6] + \
             _hash(self._publicKey.encode('utf-8'))[0:64]
         
-        file_temp= open(self._get_keyfile("manu"))
+        file_temp= open(self._get_keyfile("client1"))
         privateKeyStr= file_temp.read().strip()
         private_temp = Secp256k1PrivateKey.from_hex(privateKeyStr)
         self._signer_temp = CryptoFactory(create_context('secp256k1')) \
