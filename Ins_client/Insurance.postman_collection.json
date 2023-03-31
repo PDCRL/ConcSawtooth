@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "794e59d7-ebb0-4fa5-b47c-dab93c4cce6b",
+		"name": "Insurance",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Count_API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\n          \"userid\":\"admin3464376457578\"\n        }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.210.12.184:3002/api/count",
+					"protocol": "http",
+					"host": [
+						"10",
+						"210",
+						"12",
+						"184"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\":{\r\n             \"addharid\":\"47646\",\r\n             \"userid\":\"10005\",\r\n             \"firstname\":\"ziaaaa\",\r\n             \"lastname\":\"lee\",\r\n             \"Dob\":\"05/03/1997\",\r\n             \"place\":\"US\"   \r\n              }     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://10.210.12.184:3002/api/registeruser",
+					"protocol": "http",
+					"host": [
+						"10",
+						"210",
+						"12",
+						"184"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"registeruser"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

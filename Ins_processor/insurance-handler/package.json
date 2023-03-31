@@ -1,0 +1,36 @@
+{
+  "name": "insuranceprocessor",
+  "version": "1.0.0",
+  "main": "router.js",
+  "scripts": {
+    "start": "node Processor.js",
+    "start:dev": "nodemon router.js"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "crypto": "^1.0.1",
+    "debug": "~2.6.9",
+    "encoding": "^0.1.12",
+    "express": "~4.16.0",
+    "express-handlebars": "^6.0.5",
+    "express-xml-bodyparser": "^0.3.0",
+    "fs": "0.0.1-security",
+    "http-errors": "~1.6.2",
+    "jade": "^0.29.0",
+    "md5": "^2.3.0",
+    "morgan": "~1.9.0",
+    "node-fetch": "^2.6.7",
+    "node-gyp-build": "^4.3.0",
+    "protobufjs": "^6.7.3",
+    "sawtooth-sdk": "^1.0.2",
+    "secp256k1": "^3.2.5",
+    "text-encoding": "^0.6.4",
+    "uuid": "^3.0.1",
+    "xml2js": "^0.4.23",
+    "zeromq": "^4.6.0"
+  },
+  "devDependencies": {},
+  "description": ""
+}
