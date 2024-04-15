@@ -128,6 +128,7 @@ class SerialScheduler(Scheduler):
             self._condition.notify_all()
 
     def add_batch(self, batch, state_hash=None, required=False):
+        self.exe_start = time.time()
         with self._condition:
             if self._final:
                 raise SchedulerError("Scheduler is finalized. Cannot take"
@@ -393,7 +394,7 @@ class SerialScheduler(Scheduler):
                 self._calculate_state_root_if_not_already_done()
                 self.exe_end=time.time()
                 cal_exe = self.exe_end - self.exe_start
-                f = open("DAG/timing_cal.txt", "a")
+                f = open("timing_computation.txt", "a")
                 f.write("\n-------------------")
                 f.write("\nexecution:")
                 f.write(str(cal_exe))
